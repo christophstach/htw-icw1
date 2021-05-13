@@ -1,0 +1,17 @@
+\section{Introduction}
+
+Computer science's independent coursework project will be about image generation with Generative Adversarial Networks (GAN). The goal is to examine GANs and explore their capability of generating new images of arbitrary datasets. This project uses photorealistic paintings, but the proposed application can also create a different format. Generative Adversarial Networks is a research area of deep learning, where two (or more) Neural Networks are competing. In a standard GAN architecture, a Generator creates images from a random number vector. A Discriminator decides if the image comes from the Generator or the actual dataset. The Generator continuously tries to fool the Discriminator and therefore creates images of increasing quality.
+
+
+\subsection{Motivation}
+
+Early GAN implementations used Dense-layers to generate new data. Follow-up projects like DCGAN used Convolutional-layers, which are better suited for computer vision and image tasks. Still, it was tough to train networks with the capability of generating larger images. Training often was unstable and suffered from problems like Mode-Collapse. GANs require datasets of vast size and sufficient computing power. These reasons make GANs an exciting research topic.
+
+\subsection{Objective}
+
+The project aims to develop a GAN-model capable of creating new images from a given dataset. The focus lies on generating images of faces. It should create images in RGB-format bigger than the ones from the traditional MNIST-dataset (28x28 pixels), at least 64x64 pixels. The developed pipeline should be flexible to create models of different sizes. The training progress should converge and avoid failure modes like Mode-Collapse. Creating a GAN framework that satisfies the mentioned requirements and is stable to train is the goal. That includes finding an appropriate model architecture, loss function, optimizer, and hyperparameter configuration. 
+
+
+\subsection{Constrains}
+
+As GANs need a lot of computing power and time to train, this project only generates images of a maximum size of 64x64 pixels, due to limited computing resources. The requirement is that the GAN architecture is implemented in PyTorch and trained with the Determined AI framework.

@@ -1,0 +1,114 @@
+\documentclass{scrartcl}
+
+\input{settings}
+\input{title}
+
+
+\title{Implementation of a GAN-architecture}
+\author{Christoph Stach}
+\matrikelNo{0555912}
+\university{Hochschule für Technik und Wirtschaft Berlin}
+\department{Fachbereich 4 - Angewandte Informatik}
+\email{s0555912@htw-berlin.de}
+\class{Independent Coursework 1}
+
+\submitDate{28.08.2018}
+\supervisor{Prof. Dr. Christian Herta}
+
+
+\begin{document}
+
+
+\maketitle
+
+\newpage
+
+\begin{abstract}
+    \thispagestyle{empty}
+    \begin{changemargin}{2.0cm}{2.0cm}
+        
+        \vspace*{\fill}
+        \begin{center}
+            \Large
+            \textbf{Abstract}
+            \vspace{0.5cm}
+        \end{center}
+
+        \large
+        This project demonstrates the usage of Generative Adversarial Networks to generate new images of a given domain. The author uses an often used network architecture combined with a successfully proven loss function to train multiple models. He demonstrates the flexibility of this approach by using networks of different depths. Training is performed on two image datasets, and the results are presented at the end of the document. The chosen approach can generate RGB images, which look similar to the source dataset, but usually contain generation artifacts. 
+
+        \vspace*{\fill}
+    \end{changemargin}
+\end{abstract}
+
+\newpage
+
+\pagenumbering{roman}
+
+
+% \addcontentsline{toc}{section}{Contents}
+\thispagestyle{empty}
+\tableofcontents
+
+
+\newpage
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{\listfigurename}
+
+\listoffigures
+\addcontentsline{toc}{section}{\listtablename}
+\listoftables
+
+\addcontentsline{toc}{section}{\lstlistlistingname}
+\lstlistoflistings
+
+
+\newpage
+
+
+\pagenumbering{arabic}
+
+\input{sections/01_introduction} \newpage
+\input{sections/02_fundamentals} \newpage
+\input{sections/03_methodology} \newpage
+\input{sections/04_results} \newpage
+
+\pagenumbering{Roman}
+
+
+
+\newpage
+\addcontentsline{toc}{section}{Bibliography}
+\addcontentsline{toc}{subsection}{Literature references}
+\printbibliography[
+    notkeyword={online},
+    title={Literature references}
+]
+
+\addcontentsline{toc}{subsection}{Online references}
+\printbibliography[
+    keyword={online},
+    title={Online references}
+]
+
+
+% \newpage
+% \thispagestyle{empty}
+% \appendix
+% \addcontentsline{toc}{section}{Appendix}
+% \section*{Appendix}
+
+% \addcontentsline{toc}{subsection}{Test 2}
+% \subsection*{Test 2}
+
+% Hier kommt Appendix 1 hin
+
+% \addcontentsline{toc}{subsection}{Test 3}
+% \subsection*{Test 3}
+
+
+
+% Hier kommt Appendix 2 hin
+
+
+\end{document}
