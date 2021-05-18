@@ -141,7 +141,7 @@ The first step in a WGAN is to optimize the Discriminator. To do that, one needs
 
 \newpage
 
-To train the Generator, the Discriminator only needs to calculate the scores of the generated fake images. The scores pass to the Generator's loss function, and the backward function uses it to calculate the gradients. Afterward, the Generator's optimizer performs an optimization step on the Generator's weights.
+To train the Generator, the Discriminator only needs to calculate the scores of the generated fake images. The scores pass to the Generator's loss function, and the backward function uses the loss to calculate the gradients. Afterward, the Generator's optimizer performs an optimization step on the Generator's weights.
 
 \begin{listing}[H]
 \inputminted{python}{resources/codes/optimize_generator.py}
